@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Invoice</title>
+</head>
+
+<body>
+  <div>
+    <div class="max-w-4xl mx-auto px-5 py-8">
+      <div class="border border-gray-500 p-4">
+
+        <!--Title -->
+        <div class="flex items-center justify-between border-b border-gray-500 pb-2">
+          <table class="w-full">
+            <tr class=" border-0">
+              <td class="w-1/2 bg-white">
+                <div class="text-xl font-size uppercase font-bold">
+                  <div>INVOICE</div>
+                </div>
+              </td>
+              <td class="w-1/2 bg-white">
+                <div class=" text-right">
+                  <div> <span class="font-bold">Number: </span> 395-4454-45454 </div>
+                  <div> <span class="font-bold">Date: </span>12/12/2024 10:10:58</div>
+                </div>
+              </td>
+            </tr>
+          </table>          
+        </div>
+
+        <!-- Seller and buyer -->
+        <div class="w-full">
+          <table class=" w-full text-sm">
+            <tr class=" bg-white border-b border-gray-500">
+
+              <td class="w-1/2 space-y-3 bg-white py-4">
+                <div class="text-lg font-bold">Seller</div>
+
+                <div class="space-y-2">
+                  <div><span class="font-bold">Name:</span> Company Name </div>
+                  <div><span class="font-bold">Email:</span> Company Email </div>
+                  <div><span class="font-bold">Phone:</span> Company Phone </div>
+                  <div><span class="font-bold">Address:</span> Company Address </div>
+                  <div><span class="font-bold">Number:</span> 123455677 </div>
+                  <div><span class="font-bold">Company VAT: </span> IVA 14 </div>
+                </div>
+              </td>
+
+              <td class="w-1/2 pl-7 border-l border-gray-500 space-y-3 bg-white py-4">
+                <div class="text-lg font-bold">Client</div>
+
+                <div class="space-y-2">
+                  <div><span class="font-bold">Name:</span> Client Name </div>
+                  <div><span class="font-bold">Email:</span> Client Email </div>
+                  <div><span class="font-bold">Phone:</span> Client Phone </div>
+                  <div><span class="font-bold">Address:</span> Client Address </div>
+                  <div><span class="font-bold">Number:</span> 123455677 </div>
+                  <div><span class="font-bold">City:</span> 123455677 </div>
+                </div>
+              </td>
+
+            </tr>
+          </table>
+        </div>
+        <!-- End seller and buyer -->
+
+        <!-- Deliverey date -->
+        <div class="mt-5">
+          The products were made available to the customer on 10-10-2024 at 10:10:47
+        </div>
+        <!-- End deliverey date -->
+
+        <!-- Products -->
+        <div class="mt-5 w-full text-sm overflow-x-auto">
+          <div class="text-md uppercase">Items</div>
+          <table class="items w-full">
+            <thead>
+              <tr class="border-b border-gray-500">
+                <th>Description</th>
+                <th>Qty.</th>
+                <th>PU</th>
+                <th>Discount %</th>
+                <th>Disocunt</th>
+                <th>Tax %</th>
+                <th>Tax Value</th>
+                <th>Subtotal</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="border-b border-gray-500">
+                <td>Description</td>
+                <td>12</td>
+                <td>120.00</td>
+                <td>14 %</td>
+                <td>100.99</td>
+                <td>5 %</td>
+                <td>20.99</td>
+                <td>125.000</td>
+              </tr>
+              <tr class="border-b border-gray-500">
+                <td>Description</td>
+                <td>12</td>
+                <td>120.00</td>
+                <td>14 %</td>
+                <td>100.99</td>
+                <td>5 %</td>
+                <td>20.99</td>
+                <td>125.000</td>
+              </tr>
+              <tr class="border-b border-gray-500">
+                <td>Description</td>
+                <td>12</td>
+                <td>120.00</td>
+                <td>14 %</td>
+                <td>100.99</td>
+                <td>5 %</td>
+                <td>20.99</td>
+                <td>125.000</td>
+              </tr>
+              <tr class="border-b border-gray-500">
+                <td colspan="4"></td>
+                <td colspan="3">Amount without tax</td>
+                <td>125.000</td>
+              </tr>
+              <tr class="border-b border-gray-500">
+                <td colspan="4"></td>
+                <td colspan="3">Total tax</td>
+                <td>125.000</td>
+              </tr>
+              <tr class="border-b border-gray-500">
+                <td colspan="4"></td>
+                <td colspan="3">Total Discount</td>
+                <td>125.000</td>
+              </tr>
+              <tr class=" bg-gray-300 text-xl font-bold border-b border-gray-500">
+                <td colspan="4"></td>
+                <td colspan="3" class="bg-gray-300">Total</td>
+                <td class="bg-gray-300">125.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End products -->
+
+        <!-- Payments Details -->
+        <div class="mt-5 w-full  overflow-x-auto">
+          <div class="text-md uppercase">Payments Details </div>
+          <table class="items w-full">
+            <thead>
+              <tr class="border-b border-gray-500">
+                <th>Amount</th>
+                <th>Payment Method</th>
+                <th>Amount Delivered</th>
+                <th>Change</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="border-b border-gray-500">
+                <td>1000</td>
+                <td>Cash</td>
+                <td>120.00</td>
+                <td>50.00</td>
+              </tr>
+              <tr class="border-b border-gray-500">
+                <td>1000</td>
+                <td>Cash</td>
+                <td>120.00</td>
+                <td>50.00</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+        <!-- End Payments Details  -->
+
+        <div class="mt-5 text-center text-gray-600"">
+          Invoice processed by program validate number Nº 745/AGT/2024 <br>
+          VAT General regime
+        </div>
+
+        <div class=" mt-8 text-center text-gray-600">
+          Thank you and come back often
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

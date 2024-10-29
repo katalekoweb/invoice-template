@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        @apply text-gray-700
+    }
+
+    thead tr {
+        @apply bg-gray-300
+    }
+
+    tbody tr {
+        @apply odd:bg-gray-100 even:bg-white border-b border-gray-500;
+    }
+
+    th, td {
+        @apply text-left p-1;
+    }
+}
